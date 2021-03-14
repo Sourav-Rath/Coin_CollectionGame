@@ -1,0 +1,49 @@
+AndroidPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.AndroidPlatformSDK using manually installed SDK -23
+IOSPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.IOSPlatformSDK has no valid SDK
+LinuxPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.LinuxPlatformSDK has no valid SDK
+WindowsPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.WindowsPlatformSDK using manually installed SDK
+ProjectFileGenerator.GenerateProjectFiles: Discovering modules, targets and source code for project...
+WindowsPlatform.FindVSInstallDirs: Found Visual Studio installation: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community (Product=Microsoft.VisualStudio.Product.Community, Version=16.9.31025.194, Sort=0)
+WindowsPlatform.FindToolChainDirs: Found Visual Studio toolchain: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910 (Version=14.28.29910)
+DynamicCompilation.RequiresCompilation: Compiling D:\Epic Games\UE_4.25\Engine\Intermediate\Build\BuildRules\UE4Rules.dll: Added source file (D:\Epic Games\UE_4.25\Engine\Plugins\Engine\Plugins\Runtime\HoudiniEngine\Source\HoudiniEngine\HoudiniEngine.Build.cs)
+DynamicCompilation.CompileAssembly: While compiling D:\Epic Games\UE_4.25\Engine\Intermediate\Build\BuildRules\UE4Rules.dll:
+DynamicCompilation.CompileAssembly: d:\Epic Games\UE_4.25\Engine\Plugins\Runtime\HoudiniEngine\Source\HoudiniEngineEditor\HoudiniEngineEditor.Build.cs(45,14) : error CS0101: The namespace '<global namespace>' already contains a definition for 'HoudiniEngineEditor'
+DynamicCompilation.CompileAssembly: d:\Epic Games\UE_4.25\Engine\Plugins\Runtime\HoudiniEngine\Source\HoudiniEngineRuntime\HoudiniEngineRuntime.Build.cs(45,14) : error CS0101: The namespace '<global namespace>' already contains a definition for 'HoudiniEngineRuntime'
+UnrealBuildTool.Main: ERROR: Unable to compile source files.
+UnrealBuildTool.Main: BuildException: Unable to compile source files.
+UnrealBuildTool.Main:    at UnrealBuildTool.DynamicCompilation.CompileAssembly(FileReference OutputAssemblyPath, HashSet`1 SourceFileNames, List`1 ReferencedAssembies, List`1 PreprocessorDefines, Boolean TreatWarningsAsErrors) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 383
+UnrealBuildTool.Main:    at UnrealBuildTool.DynamicCompilation.CompileAndLoadAssembly(FileReference OutputAssemblyPath, HashSet`1 SourceFileNames, List`1 ReferencedAssembies, List`1 PreprocessorDefines, Boolean DoNotCompile, Boolean TreatWarningsAsErrors) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 450
+UnrealBuildTool.Main:    at UnrealBuildTool.RulesAssembly..ctor(RulesScope Scope, List`1 BaseDirs, IReadOnlyList`1 Plugins, Dictionary`2 ModuleFileToContext, List`1 TargetFiles, FileReference AssemblyFileName, Boolean bContainsEngineModules, Nullable`1 DefaultBuildSettings, Boolean bReadOnly, Boolean bSkipCompile, RulesAssembly Parent) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\RulesAssembly.cs:line 110
+UnrealBuildTool.Main:    at UnrealBuildTool.RulesCompiler.CreateEngineOrEnterpriseRulesAssembly(RulesScope Scope, List`1 RootDirectories, String AssemblyPrefix, IReadOnlyList`1 Plugins, Boolean bReadOnly, Boolean bSkipCompile, RulesAssembly Parent) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 479
+UnrealBuildTool.Main:    at UnrealBuildTool.RulesCompiler.CreateEngineRulesAssembly(Boolean bUsePrecompiled, Boolean bSkipCompile) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 398
+UnrealBuildTool.Main:    at UnrealBuildTool.RulesCompiler.CreateProjectRulesAssembly(FileReference ProjectFileName, Boolean bUsePrecompiled, Boolean bSkipCompile) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 531
+UnrealBuildTool.Main:    at UnrealBuildTool.ProjectFileGenerator.AddProjectsForAllTargets(PlatformProjectGeneratorCollection PlatformProjectGenerators, List`1 AllGames, List`1 AllTargetFiles, String[] Arguments, ProjectFile& EngineProject, ProjectFile& EnterpriseProject, List`1& GameProjects, Dictionary`2& ProgramProjects) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 2288
+UnrealBuildTool.Main:    at UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 753
+UnrealBuildTool.Main:    at UnrealBuildTool.GenerateProjectFilesMode.Execute(CommandLineArguments Arguments) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:line 198
+UnrealBuildTool.Main:    at UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:line 550
+Timeline.Print: Timeline:
+Timeline.Print: 
+Timeline.Print: [ 0.000]
+Timeline.Print: [ 0.000](+0.033) <unknown>
+Timeline.Print: [ 0.033](+0.075) XmlConfig.ReadConfigFiles()
+Timeline.Print: [ 0.110](+0.000) SingleInstanceMutex.Acquire()
+Timeline.Print: [ 0.110](+0.148) UEBuildPlatform.RegisterPlatforms()
+Timeline.Print:   0.110          [ 0.000](+0.025) Initializing InstalledPlatformInfo
+Timeline.Print:   0.136          [ 0.026](+0.000) Querying types
+Timeline.Print:   0.138          [ 0.027](+0.001) XXXPlatformFactory
+Timeline.Print:   0.139          [ 0.029](+0.000) MacPlatformFactory
+Timeline.Print:   0.139          [ 0.029](+0.000) TVOSPlatformFactory
+Timeline.Print:   0.139          [ 0.029](+0.020) AndroidPlatformFactory
+Timeline.Print:   0.159          [ 0.049](+0.000) HoloLensPlatformFactory
+Timeline.Print:   0.160          [ 0.049](+0.068) IOSPlatformFactory
+Timeline.Print:   0.228          [ 0.118](+0.028) LinuxPlatformFactory
+Timeline.Print:   0.257          [ 0.147](+0.000) LuminPlatformFactory
+Timeline.Print:   0.257          [ 0.147](+0.000) WindowsPlatformFactory
+Timeline.Print: [ 0.258](+0.586) <unknown>
+Timeline.Print: [ 0.844](+0.003) Finding engine modules
+Timeline.Print: [ 0.847](+0.003) Finding plugin modules
+Timeline.Print: [ 0.850](+0.032) <unknown>
+Timeline.Print: [ 0.883](+1.333) Compiling rules assembly (UE4Rules.dll)
+Timeline.Print: [ 2.217](+0.061) <unknown>
+Timeline.Print: [ 2.278](+0.000) FileMetadataPrefetch.Stop()
+Timeline.Print: [ 2.281]

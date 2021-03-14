@@ -1,3 +1,0 @@
-C:\Users\tommy\Desktop\CoinCollectorStarter\Source\CoinCollector\CoinCollector.Build.cs
-C:\Users\tommy\Desktop\CoinCollectorStarter\Source\CoinCollector.Target.cs
-C:\Users\tommy\Desktop\CoinCollectorStarter\Source\CoinCollectorEditor.Target.cs
